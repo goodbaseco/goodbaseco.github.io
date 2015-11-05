@@ -29,10 +29,54 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
-    <style>
-    	.row { margin-right: 0px; }
-    </style>
+	
+	<style>
+	@font-face {
+		  font-family: 'fontello';
+		  src: url('assets/fonts/fontello/font/fontello.eot?59121317');
+		  src: url('assets/fonts/fontello/font/fontello.eot?59121317#iefix') format('embedded-opentype'),
+			   url('assets/fonts/fontello/font/fontello.woff?59121317') format('woff'),
+			   url('assets/fonts/fontello/font/fontello.ttf?59121317') format('truetype'),
+			   url('assets/fonts/fontello/font/fontello.svg?59121317#fontello') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+    }
+
+    .demo-icon
+    {
+		  font-family: "fontello";
+		  font-style: normal;
+		  font-weight: normal;
+		  speak: none;
+		 
+		  display: inline-block;
+		  text-decoration: inherit;
+		  text-align: center;
+		  /* opacity: .8; */
+		 
+		  /* For safety - reset parent styles, that can break glyph codes*/
+		  font-variant: normal;
+		  text-transform: none;
+		 
+		  /* fix buttons height, for twitter bootstrap */
+		  line-height: 1em;
+		 
+		  /* You can be more comfortable with increased icons size */
+		  /* font-size: 120%; */
+		 
+		  /* Font smoothing. That was taken from TWBS */
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		 
+		  /* Uncomment for 3D effect */
+		  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }	
+	
+	#service i {
+		color: #00b3fe;
+		font-size: 90px;
+	}	
+	</style>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -62,8 +106,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME</a></li>
-			<li><a href="tour.html">TOUR</a></li>
+            <li><a href="index.html">HOME</a></li>
+			<li class="active"><a href="tour.html">TOUR</a></li>
             <li><a href="mailto:hello@goodbase.co">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -110,82 +154,206 @@
 	    			<br>
 	    			<img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2.png">
 	    			<h5>Drop in knowledgebase.</h5>
-	    			<p>A slide-out knowledgbase at their fingertips.</p>
+	    			<p>A popout knowledgbase at their fingertips.</p>
 	    		</div>
 	    	</div>
 	    </div> <!--/ .container -->
 	</div>	 
-	 
-	<!-- *****************************************************************************************************************
-	 FEATURE PANELS
-	 ***************************************************************************************************************** -->	 
-
-	<div id="w">
-		<div class="row nopadding">
-			<div class="col-md-5 col-md-offset-1 mt">
-				<h2>Stop information siloing.</h2>
-				<p>Goodbase provides a centralized place for your team to create, store and access great product related information, which can then be accessed within your product and other channels using our embeddable knowledgebase widgets. We've built it so that anyone should be able to participate in creating relevant content.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" onclick="$('html, body').animate({ scrollTop: $(document).height() }, 'slow'); return false;">Be notified when we launch</button></p>
-			</div>
-			
-			<div class="col-md-6 pull-right">
-				<img src="assets/img/dotslines.png" class="img-responsive alignright effect-slide-right in" alt="" data-effect="slide-right" style="-webkit-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;">
-			</div>
-		</div><!-- --/row ---->
-	</div>	 
-	<div id="w">
-		<div class="row nopadding">
-			<div class="col-md-6 pull-left">
-				<img src="assets/img/mimic-tab_3.png" style="max-height: 480px;" class="img-responsive alignleft effect-slide-left in" alt="" data-effect="slide-left" style="-webkit-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;">
-			</div>
-			<div class="col-md-5 mt">
-				<h2>Embed everywhere.</h2>
-				<p>Goodbase has been designed from the ground up to fit within your product. By embedding knowledgebase widgets directly into your product's webpages you enable your users to quickly access product help, answers, training and information from anywhere throughout your product. Full custom styling support to integrate it in seamlessly.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" onclick="$('html, body').animate({ scrollTop: $(document).height() }, 'slow'); return false;">Be notified when we launch</button></p>
-			</div>
 	
-		</div><!-- --row ---->
-	</div>	 
-	<div id="w">
-		<div class="row nopadding">
-			<div class="col-md-5 col-md-offset-1 mt">
-				<h2>Unleash the team.</h2>
-				<p>Embedding a knowledgebase widget into your companies Intranet also enables you to unlock your subject matter experts and generate better content, while also supporting your internal staff more effectively by providing help, answers, training and information at their fingertips.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" onclick="$('html, body').animate({ scrollTop: $(document).height() }, 'slow'); return false;">Be notified when we launch</button></p>
-			</div>
-			
-			<div class="col-md-6 pull-right">
-				<img src="assets/img/image_type12_tcm245_1834035_tcm245_2020532_tcm245-1834035.png" class="img-responsive alignright effect-slide-right in" alt="" data-effect="slide-right" style="-webkit-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out;">
-			</div>
-		</div><!-- --/row ---->
-	</div>
- 
 	<!-- *****************************************************************************************************************
 	 SERVICE LOGOS
 	 ***************************************************************************************************************** -->
-	 <div id="service" style="margin-top: 0px;">
+	 
+	<!--
+		Sales
+
+		support that never sleeps
+		No IT needed 
+
+
+		Developers
+
+		Sources
+		Rest API
+
+
+		Content 
+
+		Document types overview
+		Related content
+
+
+		Embed 
+
+		three modes (pop-out, inline, manual)
+		Target different audiences 
+
+
+		Product 
+
+		Search
+		Create tours
+
+
+		Design
+
+		Build the homepage
+		Full CSS customisation
+
+
+		Users
+
+		audiences
+		Unlimited users
+
+
+		Pricing
+
+		unlimited users/widgets
+		Simple pay for storage model
+
+	-->
+	 
+	 <div id="service">
 	 	<div class="container">
  			<div class="row centered">
-				<h3 style="padding-bottom: 30px;">HOW DOES IT WORK?</h3>
- 				<div class="col-md-4">
- 					<i class="fa fa-pencil"></i>
- 					<h4><span class="badge badge-step">1</span> Create content.</h4>
- 					<p>Easily populate your knowledgebase with meaningful content, define when and where it should be surfaced, and who would find it most relevant.</p>
+				<h2>Why Goodbase?</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-thumbs-up">&#xe801;</i>
+ 					<h4>It works with your website</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
  				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-code"></i>
- 					<h4><span class="badge badge-step">2</span> Get your embed code.</h4>
- 					<p>Choose how you want to display your knowledgebase within your webpages, and tweak their look and feel. Then copy the embed code to your clipboard.</p>
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-file-code-o"></i>
- 					<h4><span class="badge badge-step">3</span> Add into your webpages.</h4>
- 					<p>Follow the instructions to insert the embed code into your webpage's HTML. Then load your webpage, and look - there's your knowledgebase!</p>
- 				</div>		 				
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-clock">&#xe800;</i>
+ 					<h4>Provide 24/7 support</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
 	 		</div>
-	 		<p class="mt" style="text-align: center;"><a class="btn btn-white btn-theme" href="tour.html">See the feature tour</a></p>
+	 	</div><! --/container -->
+	 </div><! --/service -->	
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Simple pricing.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-user-add">&#xe80c;</i>
+ 					<h4>Unlimited users</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-chart-outline">&#xe80d;</i>
+ 					<h4>Only pay for storage</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
 	 	</div><! --/container -->
 	 </div><! --/service -->		 
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Powerful content.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-news">&#xe804;</i>
+ 					<h4>Built for search</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-link-outline">&#xe805;</i>
+ 					<h4>Relationships and relevance</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->	
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Embed everywhere.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-export-outline">&#xe808;</i>
+ 					<h4>Display it your way</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-users">&#xe807;</i>
+ 					<h4>Target different audiences</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->	
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Showcase your product.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-code-outline">&#xe806;</i>
+ 					<h4>Embed links</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-location-outline">&#xe809;</i>
+ 					<h4>Create product tours</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Flexible design.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-laptop">&#xe80a;</i>
+ 					<h4>Fine-tune the welcome screen</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-brush">&#xe80b;</i>
+ 					<h4>Full CSS customization</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->	
+
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+				<h2>Built for developers.</h2>
+				<p class="lead">Introduction to this section.</p>
+
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-database">&#xe803;</i>
+ 					<h4>Rest API</h4>
+ 					<p>No I.T needed, just add a code snippet into your webpage. We'll handle the scaling too, to grow with your product demands, across the globe.</p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="demo-icon icon-plug">&#xe80e;</i>
+ 					<h4>External content sources</h4>
+ 					<p>Knowledgebases are always accessible, automated support solutions. Content can be quickly added and updated to ensure that your customers find the help they need.</p>
+ 				</div>	 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->		 
+	  	 
 	 
 	<!-- *****************************************************************************************************************
 	 TESTIMONIALS
